@@ -13,6 +13,19 @@ module.exports = function (grunt) {
         dest: 'build/<%= pkg.name %>.min.js'
       }
     },
+
+    //         imagemin: {
+    //             png: {
+    //               options: {
+    //                 optimizationLevel: 7
+    //               },
+    //               files: [
+    //                 {
+    //                   expand: true,
+    //                   cwd: 'src/img/',
+    //                   src: ['**/*.png'],
+    //                   dest: 'dist/img/',
+    //                   ext: '.png'
     imagemin: {
       static: {
         options: {
@@ -33,7 +46,8 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'src/',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'dist/'
+          dest: 'dist/',
+          ext: '.jpg'
         }]
       }
     }
