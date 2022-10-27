@@ -23,7 +23,6 @@
         }
 
         .topview {
-            height: 100vh;
             background: rgb(2, 0, 36);
             background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 
@@ -63,6 +62,21 @@
 
         .textfield:focus {
             background-color: #ffb700;
+        }
+        .lead span {
+            color: mediumaquamarine;
+            filter: saturate(800%);
+            text-shadow: 1px 2px 5px aquamarine;
+            animation: glow 5s ease-in-out 2s infinite alternate both;
+        }
+        @keyframes glow {
+            from {
+                filter: invert(0%);
+            }
+            to {
+                filter: invert(60%);
+            }
+            
         }
     </style>
 </head>
@@ -104,13 +118,13 @@
         </header>
         <div class="container py-5">
             <h1 style="font-family: arial;font-weight: bold;font-size: 42px;">HTML dan CSS</h1>
-            <p class="lead">Tugas kedua <strong>Matrikulasi</strong>, meliputi penguasaan <strong><b>HTML5</b></strong>
-                secara <u><i>Semantic</i></u>.</p>
+            <p class="lead">Tugas kedua <strong>Matrikulasi</strong>, <span>meliputi penguasaan <strong><b>HTML5</b></strong>
+                secara <u><i>Semantic</i></u>.</span></p>
 
             <hr class="my-5">
         </div>
         <div class="container !direction !spacing">
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row g-3 pb-5 needs-validation" novalidate>
                 <div class="col-md-4">
                     <label for="validationCustom01" class="form-label">First name</label>
                     <input type="text" class="textfield" id="validationCustom01" value="Mark" required>
