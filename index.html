@@ -5,19 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.72.0">
     <title>My HomePage</title>
-
-    <link rel="canonical" href="https://github.com/Ichikyube/UMPTN-ALKADEMI-HTML">
-    <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="style.css">
     <!-- Favicons? -->
@@ -27,136 +22,160 @@
             background-color: #FFF600;
         }
 
+        .topview {
+            height: 100vh;
+            background: rgb(2, 0, 36);
+            background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+        }
+
+        header {
+            color: aqua;
+            background: rgb(8, 7, 102);
+            background: linear-gradient(to top, rgb(8, 7, 102) 0%, rgba(9, 9, 121, 1), rgba(0, 212, 255, 1));
+        }
+
         img {
             object-fit: cover;
         }
 
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        .input-group {
+            flex-wrap: inherit;
         }
 
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        .textfield {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border-radius: 0.375rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .textfield:focus {
+            background-color: #ffb700;
         }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">primary</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
-                aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                    <li class="nav-item dropup">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
-                            aria-expanded="false">Dropup</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <div class="topview">
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">NIITK</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                        aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarID">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tentang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">KirimPesan</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
+                                    aria-expanded="false">Tugas</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                    <li><a class="dropdown-item" href="#">Git</a></li>
+                                    <li><a class="dropdown-item" href="#">HTML & CSS</a></li>
+                                    <li><a class="dropdown-item" href="#">TailwindCSS framework</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container py-5">
-        <h1 style="font-family: arial;font-weight: bold;font-size: 42px;">HTML dan CSS</h1>
-        <p class="lead">Tugas kedua <strong>Matrikulasi</strong>, meliputi penguasaan <strong><b>HTML5</b></strong>
-            secara <u><i>Semantic</i></u>.</p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container py-5">
+            <h1 style="font-family: arial;font-weight: bold;font-size: 42px;">HTML dan CSS</h1>
+            <p class="lead">Tugas kedua <strong>Matrikulasi</strong>, meliputi penguasaan <strong><b>HTML5</b></strong>
+                secara <u><i>Semantic</i></u>.</p>
 
-        <hr class="my-5">
-    </div>
-    <div class="container !direction !spacing">
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-                <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
-                </div>
-            </div>
-            <div class="col-md-4">
-                <label for="validationCustomUsername" class="form-label">Username</label>
-                <div class="input-group">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername"
-                        aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                        Please choose a username.
+            <hr class="my-5">
+        </div>
+        <div class="container !direction !spacing">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="textfield" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom03" class="form-label">City</label>
-                <input type="text" class="form-control" id="validationCustom03" required>
-                <div class="invalid-feedback">
-                    Please provide a valid city.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom04" class="form-label">State</label>
-                <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                </select>
-                <div class="invalid-feedback">
-                    Please select a valid state.
-                </div>
-            </div>
-            <div class="col-md-3">
-                <label for="validationCustom05" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="validationCustom05" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                        You must agree before submitting.
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="textfield" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-        </form>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="textfield" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="textfield" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="textfield" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
     </div>
     <hr class="my-5">
     <div class="row mx-auto" data-masonry='{"percentPosition": true }'>
@@ -275,5 +294,17 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous">
     </script>
 </body>
+<script>
+    function focusfield() {
+        if (!document.getElementsByTagName) return false;
+        var formfields = document.getElementsByTagName("input");
+        for (i = 0; i < formfields.length; i++) {
+            formfields[i].onfocus = function () {
+                this.select();
+            }
+        }
+    }
+    window.onload = focusfield;
+</script>
 
 </html>
